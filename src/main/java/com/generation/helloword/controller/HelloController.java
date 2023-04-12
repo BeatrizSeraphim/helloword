@@ -18,4 +18,24 @@ public class HelloController {
 		return "<b>Hello <br />Beatriz</b>";
 	}
 	
+	@GetMapping("/helloword")
+	public String helloWord() {
+		return "<b>Hello Word!</b>";
+	}
+	
+	@GetMapping("/bsm")
+	public String bsmGen() {
+		return "<b>Lista de BSM´S da Generation Brasil: <br />Responsabilidade Pessoal "
+				+ "<br />Mentalidade de crescimento <br /> "
+				+ "Orientação ao futuro <br />"
+				+ "Persistência <br /> Comunicação <br />"
+				+ " Orientação aos Detalhes <br /> "
+				+ "Trabalho em equipe <br /> Proatividade</b>";
+	}
+	
+	@GetMapping("/objetivo")
+	public String meusObjetivos() {
+		return "<b>Objetivos da semana: <br />Comunicação</br /> Trabalho em equipe<br /> Persistência </b>";
+	}
+	
 }
